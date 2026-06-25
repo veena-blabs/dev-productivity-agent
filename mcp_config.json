@@ -1,0 +1,11 @@
+{
+  "_comment_proves": "Concept 2.4: Integrate MCP servers",
+  "_comment_purpose": "The fetch-docs server lets the agent pull official documentation URLs, grounding answers in real docs instead of hallucinating. Connect with: claude --mcp-config mcp_config.json",
+  "mcpServers": {
+    "fetch-docs": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"],
+      "description": "Fetches and parses web documentation pages. Used by the agent to retrieve official API docs, framework guides, and library references when answering how-does-X-work questions."
+    }
+  }
+}
